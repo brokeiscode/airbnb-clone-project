@@ -15,19 +15,6 @@ To enhance my expertise in modern software development practices. These tasks in
 - Strengthen my ability to document and plan complex software projects effectively.
 - Develop an understanding of integrating technologies like Django, MySQL, and GraphQL in a unified ecosystem.
 
-## Tech Stack
-
-| **Technology**              | **Tools**                     |
-| --------------------------- | ----------------------------- |
-| Backend Framework           | Django, Django REST Framework |
-| Database                    | MySQL, PostgreSQL             |
-| API Integreation            | restAPI, graphQL              |
-| Containerization            | Docker                        |
-| CI/CD Pipelines             | GitHub Action                 |
-| Caching and In-Memory Store | Redis                         |
-| Task queue                  | Celery                        |
-| Dev Tools and Others        | Git, GitHub                   |
-
 ## Team Roles
 
 **Backend Developer**:
@@ -41,3 +28,16 @@ Handles deployment, monitoring, and scaling of the backend services.
 
 **QA Engineer**:
 Ensures the backend functionalities are thoroughly tested and meet quality standards.
+
+## Technology Stack
+
+| **Technology**        | **Description**                                                                       |
+| --------------------- | ------------------------------------------------------------------------------------- |
+| Django                | A Python web framework used for building the RESTful API.                             |
+| Django REST Framework | Flexible toolkit for creating and managing RESTful APIs.                              |
+| PostgreSQL            | A relational database system used for data storage.                                   |
+| GraphQL               | Allows for flexible and efficient querying of data.                                   |
+| Celery                | For handling asynchronous tasks such as sending notifications or processing payments. |
+| Redis                 | Used for caching and session management.                                              |
+| Docker                | Containerization tool for consistent development and deployment environments.         |
+| CI/CD Pipelines       | Automated pipelines for testing and deploying code changes.                           |
