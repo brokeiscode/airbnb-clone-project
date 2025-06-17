@@ -15,6 +15,8 @@ To enhance my expertise in modern software development practices. These tasks in
 - Strengthen my ability to document and plan complex software projects effectively.
 - Develop an understanding of integrating technologies like Django, MySQL, and GraphQL in a unified ecosystem.
 
+---
+
 ## Team Roles
 
 **Backend Developer**:
@@ -29,6 +31,8 @@ Handles deployment, monitoring, and scaling of the backend services.
 **QA Engineer**:
 Ensures the backend functionalities are thoroughly tested and meet quality standards.
 
+---
+
 ## Technology Stack
 
 | **Technology**        | **Description**                                                                       |
@@ -42,6 +46,8 @@ Ensures the backend functionalities are thoroughly tested and meet quality stand
 | Docker                | Containerization tool for consistent development and deployment environments.         |
 | CI/CD Pipelines       | Automated pipelines for testing and deploying code changes.                           |
 
+---
+
 ## Database Design
 
 | **Entity** | **Fields**                                                         |
@@ -52,11 +58,13 @@ Ensures the backend functionalities are thoroughly tested and meet quality stand
 | Payments   | payment_id, payment_reference, payment_status, payment_method      |
 | Reviews    | review_id, review_message, reivew_rating                           |
 
-A **user** can list multiple **properties**, **book** multiple properties and multiple **users** can interact about the **booking** of a **property**.
-A **property** belongs to a user and can be **booked** by multiple users.
-A **booking** belongs to a **property** and a property can have multiple **bookings**.
-A **payment** can be made for a **booking** by a **user** and a **user** will recieve payment for a **booking** of their listed **property**
-A **review** can be submitted by a **user** for a **property** and a **review** can be submitted by a host(**user**) on a **user** who **booked** their **property**.
+- A **user** can list multiple **properties**, **book** multiple properties and multiple **users** can interact about the **booking** of a **property**.
+- A **property** belongs to a user and can be **booked** by multiple users.
+- A **booking** belongs to a **property** and a property can have multiple **bookings**.
+- A **payment** can be made for a **booking** by a **user** and a **user** will recieve payment for a **booking** of their listed **property**.
+- A **review** can be submitted by a **user** for a **property** and a **review** can be submitted by a host(**user**) on a **user** who **booked** their **property**.
+
+---
 
 ## Feature Breakdown
 
@@ -73,6 +81,8 @@ A **review** can be submitted by a **user** for a **property** and a **review** 
 - **Review System**: Post and manage reviews for properties. Lets users post feedback and rate properties they've booked. It adds credibility to listings and helps other users make informed decisions based on past experiences.
 
 - **Database Optimizations**: Implementing indexes for fast retrieval of frequently accessed data and uses caching strategies to reduce database load and improve performance. Together, these optimizations significantly improve system performance and scalability, especially under high user demand.
+
+---
 
 ## API Security
 
@@ -106,9 +116,9 @@ Payments are processed using PCI-compliant gateways, ensuring financial data is 
 
 Short-lived access tokens and secure refresh mechanisms are used to minimize risk in the event of token leakage, while maintaining a smooth user experience.
 
----
-
 In this project, security is important to protect user identity and access to private data. Prevention of unauthorized modifications or deletions of listings, fraudulent bookings and to secure reservation details. Also, to ensure the safety of financial transactions and user trust. Maintain data integrity, privacy, and protection against breaches.
+
+---
 
 ## CI/CD Pipeline
 
