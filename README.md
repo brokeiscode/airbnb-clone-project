@@ -41,3 +41,19 @@ Ensures the backend functionalities are thoroughly tested and meet quality stand
 | Redis                 | Used for caching and session management.                                              |
 | Docker                | Containerization tool for consistent development and deployment environments.         |
 | CI/CD Pipelines       | Automated pipelines for testing and deploying code changes.                           |
+
+## Database Design
+
+| **Entity** | **Fields**                                                         |
+| ---------- | ------------------------------------------------------------------ |
+| **Users**  | user_id, first_name, last_name, email_address, password.           |
+| Properties | property_id, physical_address, property_description, property_host |
+| Bookings   | booking_id, booking_date, booking_price                            |
+| Payments   | payment_id, payment_reference, payment_status, payment_method      |
+| Reviews    | review_id, review_message, reivew_rating                           |
+
+A **user** can list multiple **properties**, **book** multiple properties and multiple **users** can interact about the **booking** of a **property**.
+A **property** belongs to a user and can be **booked** by multiple users.
+A **booking** belongs to a **property** and a property can have multiple **bookings**.
+A **payment** can be made for a **booking** by a **user** and a **user** will recieve payment for a **booking** of their listed **property**
+A **review** can be submitted by a **user** for a **property** and a **review** can be submitted by a host(**user**) on a **user** who **booked** their **property**.
